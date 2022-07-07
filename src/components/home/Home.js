@@ -3,29 +3,29 @@ import imgProfile from "../../images/profile.jpg";
 
 export const Home = () => {
   return (
-    <div name="home" className="h-screen w-full ">
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
+    <div name="home" className="w-full h-screen">
+      <div className="flex flex-col items-center justify-center h-full max-w-screen-lg px-4 pt-10 mx-auto md:flex-row">
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold">
+          <h2 className="text-4xl font-bold sm:text-7xl">
             I'm a Frontend Developer
           </h2>
-          <p className="py-4 max-w-md">
+          <p className="max-w-md py-4 font-bold">
             I have 3 years of experience building and desgsining software.
             Currently, I love to work on web aplication using technologies like
             ReactJs, Redux, NextJs, Firebase and GraphQL
           </p>
           <div>
-            <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-indigo-500 cursor-pointer">
+            <button className="flex items-center px-6 py-3 my-2 text-white bg-indigo-500 rounded-md cursor-pointer group w-fit">
               Portfolio{" "}
-              <span className="group-hover:rotate-90 duration-300 ml-2">
+              <span className="ml-2 duration-300 group-hover:rotate-90">
                 <HiArrowNarrowRight size={20} />
               </span>
             </button>
           </div>
         </div>
-        <div>
+        <div className="md:mb-8">
           <img
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
+            className="w-2/3 mx-auto rounded-2xl md:w-full "
             src={imgProfile}
             alt="img profile"
           />
