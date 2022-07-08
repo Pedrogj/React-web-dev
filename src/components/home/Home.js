@@ -23,7 +23,7 @@ export const Home = () => {
             </button>
           </div>
         </div>
-        <div className="md:mb-8">
+        <div className="flex flex-col justify-center h-full">
           <img
             className="w-2/3 mx-auto rounded-2xl md:w-full "
             src={imgProfile}
