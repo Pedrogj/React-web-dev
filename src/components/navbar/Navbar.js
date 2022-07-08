@@ -29,23 +29,26 @@ export const Navbar = () => {
   ));
 
   return (
-    <div className="fixed flex items-center justify-between w-full h-20 px-4 text-white bg-black">
-      <div>
-        <h1 className="ml-2 text-2xl">Pedrodev</h1>
+    <>
+      <div className="fixed flex items-center justify-between w-full h-20 px-4 text-white bg-black">
+        <div>
+          <h1 className="ml-2 text-2xl">Pedrodev</h1>
+        </div>
+        <ul className="hidden md:flex">{requireLinksDesktop}</ul>
+        {/*----- mobile ----*/}
+        <div
+          className="z-10 pr-4 cursor-pointer md:hidden"
+          onClick={() => onToggle()}
+        >
+          {requireToggle}
+        </div>
+        {toggle && (
+          <ul className="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-screen text-gray-300 bg-gradient-to-b from-black to-gray-800">
+            {requireLinksMobile}
+          </ul>
+        )}
       </div>
-      <ul className="hidden md:flex">{requireLinksDesktop}</ul>
-      {/*----- mobile ----*/}
-      <div
-        className="z-10 pr-4 cursor-pointer md:hidden"
-        onClick={() => onToggle()}
-      >
-        {requireToggle}
-      </div>
-      {toggle && (
-        <ul className="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-screen text-gray-300 bg-gradient-to-b from-black to-gray-800">
-          {requireLinksMobile}
-        </ul>
-      )}
-    </div>
+      <div className="h-20"></div>
+    </>
   );
 };

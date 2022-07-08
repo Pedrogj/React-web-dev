@@ -3,8 +3,8 @@ import imgProfile from "../../images/profile.jpg";
 
 export const Home = () => {
   return (
-    <div name="home" className="w-full h-screen">
-      <div className="flex flex-col items-center justify-center h-full max-w-screen-lg px-4 pt-10 mx-auto md:flex-row">
+    <div name="home" className="w-full h-screen bg-neutral-100">
+      <div className="flex flex-col items-center justify-center h-full max-w-screen-lg px-4 mx-auto md:flex-row">
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl font-bold sm:text-7xl">
             I'm a Frontend Developer
