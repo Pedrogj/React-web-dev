@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { links } from "../navbar/dataLinks";
+import { Link } from "react-scroll";
 
 export const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -12,19 +13,31 @@ export const Navbar = () => {
   const requireToggle = toggle ? <FaTimes size={30} /> : <FaBars size={30} />;
 
   // Links Desktop
-  const requireLinksDesktop = links.map(({ id, link }) => (
+  const requireLinksDesktop = links.map(({ id, link, to }) => (
     <li
       key={id}
       className="px-4 font-medium text-gray-300 capitalize duration-200 cursor-pointer hover:scale-105"
     >
-      {link}
+      <Link to={to} smooth duration={500} spy={true} exact="true" offset={-80}>
+        {link}
+      </Link>
     </li>
   ));
 
   // Links Mobile
-  const requireLinksMobile = links.map(({ id, link }) => (
+  const requireLinksMobile = links.map(({ id, link, to }) => (
     <li key={id} className="px-4 py-6 text-4xl capitalize cursor-pointer">
-      {link}
+      <Link
+        onClick={() => onToggle()}
+        to={to}
+        smooth
+        duration={500}
+        spy={true}
+        exact="true"
+        offset={-80}
+      >
+        {link}
+      </Link>
     </li>
   ));
 

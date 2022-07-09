@@ -1,5 +1,6 @@
 import { HiArrowNarrowRight } from "react-icons/hi";
 import imgProfile from "../../images/profile.jpg";
+import { Link } from "react-scroll";
 
 export const Home = () => {
   return (
@@ -15,12 +16,20 @@ export const Home = () => {
             ReactJs, Redux, NextJs, Firebase and GraphQL
           </p>
           <div>
-            <button className="flex items-center px-6 py-3 my-2 text-white bg-indigo-500 rounded-md cursor-pointer group w-fit">
+            <Link
+              to="portfolio"
+              smooth
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+              className="flex items-center px-6 py-3 my-2 text-white bg-indigo-500 rounded-md cursor-pointer group w-fit"
+            >
               Portfolio{" "}
               <span className="ml-2 duration-300 group-hover:rotate-90">
                 <HiArrowNarrowRight size={20} />
               </span>
-            </button>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col justify-center h-full">

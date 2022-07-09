@@ -1,13 +1,13 @@
 import { project } from "../portfolio/dataPortfolio";
 
 export const Portfolio = () => {
-  const projects = project.map((item) => (
-    <div key={item.id} className="rounded-lg shadow-md shadow-gray-600">
-      <img src={item.img} className="rounded-t-lg" />
-      <p className="px-4 py-3 font-bold">{item.name}</p>
+  const projects = project.map(({ alt, code, demo, id, img, name }) => (
+    <div key={id} className="rounded-lg shadow-md shadow-gray-600">
+      <img src={img} alt={alt} className="rounded-t-lg" />
+      <p className="px-4 py-3 font-bold">{name}</p>
       <div className="flex items-center justify-center">
         <a
-          href={item.demo}
+          href={demo}
           target="_blank"
           rel="noreferrer"
           className="w-1/2 px-6 py-3 m-4 text-center text-white duration-200 bg-indigo-500 rounded-md cursor-pointer hover:scale-105"
@@ -15,7 +15,7 @@ export const Portfolio = () => {
           Demo
         </a>
         <a
-          href={item.code}
+          href={code}
           target="_blank"
           rel="noreferrer"
           className="w-1/2 px-6 py-3 m-4 text-center text-white duration-200 bg-indigo-500 rounded-md cursor-pointer hover:scale-105"
