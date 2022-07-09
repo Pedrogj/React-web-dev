@@ -1,54 +1,30 @@
-import img1 from "../../images/image-1.jpg";
-import img2 from "../../images/image-2.jpg";
-import img3 from "../../images/image-3.jpg";
+import img1 from "../../images/catalogProducts.jpg";
+import img2 from "../../images/reactFormik.jpg";
+import img3 from "../../images/reactWebite.jpg";
 
 export const project = [
   {
     id: 1,
-    name: "reactWater",
+    name: "Product Catalog",
     img: img1,
     alt: "react water",
-    demo: "demoReactWater.com",
-    code: "github.com",
+    demo: "https://ferromaster-app.web.app",
+    code: "https://github.com/Pedrogj/ferromaster-app",
   },
   {
     id: 2,
-    name: "reacEcommerce",
+    name: "Form With Formik",
     img: img2,
     alt: "react eccomerce",
-    demo: "demoReactEcommerce.com",
-    code: "github.com",
+    demo: "https://formik-react-mui.netlify.app/",
+    code: "https://github.com/Pedrogj/Formik-MaterialUI",
   },
   {
     id: 3,
-    name: "reactWebSite",
+    name: "React Website",
     img: img3,
     alt: "react website",
-    demo: "demoReactWebSite.com",
-    code: "github.com",
-  },
-  {
-    id: 4,
-    name: "reactAppMobile",
-    img: img1,
-    alt: "react app",
-    demo: "demoReactAppMobile.com",
-    code: "github.com",
-  },
-  {
-    id: 5,
-    name: "nodeApp",
-    img: img2,
-    alt: "node app",
-    demo: "demoNodeApp.com",
-    code: "github.com",
-  },
-  {
-    id: 6,
-    name: "reactForm",
-    img: img3,
-    alt: "react form",
-    demo: "demoReactForm.com",
-    code: "github.com",
+    demo: "https://react-website60.netlify.app/",
+    code: "https://github.com/Pedrogj/React-Website",
   },
 ];

@@ -13,7 +13,7 @@ export const Home = () => {
           <p className="max-w-md py-4 font-bold">
             I have 3 years of experience building and desgsining software.
             Currently, I love to work on web aplication using technologies like
-            ReactJs, Redux, NextJs, Firebase and GraphQL
+            ReactJs, Redux, NextJs, Firebase and GraphQL and many more.
           </p>
           <div>
             <Link

@@ -8,7 +8,7 @@ export const link = [
         Linkedin <FaLinkedin size={30} />
       </>
     ),
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/pedrodev-web/",
   },
   {
     id: 2,
@@ -17,6 +17,6 @@ export const link = [
         GitHub <FaGithub size={30} />
       </>
     ),
-    href: "https://github.com",
+    href: "https://github.com/Pedrogj",
   },
 ];

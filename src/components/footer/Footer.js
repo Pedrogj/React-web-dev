@@ -3,8 +3,8 @@ export const Footer = () => {
   const currentYear = year.getFullYear();
 
   return (
-    <div className="flex items-center justify-center h-20 bg-neutral-100">
-      <span className="text-lg font-bold">Pedrodev, {currentYear}</span>
+    <div className="flex items-center justify-center h-20 bg-black text-white">
+      <span className="text-lg">Pedrodev, {currentYear}</span>
     </div>
   );
 };
