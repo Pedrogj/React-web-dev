@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { links } from "../navbar/dataLinks";
+import { links } from "../../data/dataLinks";
 import { Link } from "react-scroll";
 
 export const Navbar = () => {
@@ -43,7 +43,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="z-10 fixed flex items-center justify-between w-full h-20 px-4 text-white bg-black">
+      <div className="fixed z-10 flex items-center justify-between w-full h-20 px-4 text-white bg-black">
         <div>
           <h1 className="ml-2 text-2xl">Pedrodev</h1>
         </div>

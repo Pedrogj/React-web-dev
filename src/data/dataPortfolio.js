@@ -1,6 +1,6 @@
-import img1 from "../../images/catalogProducts.jpg";
-import img2 from "../../images/reactFormik.jpg";
-import img3 from "../../images/reactWebite.jpg";
+import img1 from "../images/catalogProducts.jpg";
+import img2 from "../images/reactFormik.jpg";
+import img3 from "../images/reactWebite.jpg";
 
 export const project = [
   {

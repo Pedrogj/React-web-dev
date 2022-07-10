@@ -1,4 +1,4 @@
-import { skills } from "./dataSkills";
+import { skills } from "../../data/dataSkills";
 
 export const Experience = () => {
   const skillsContent = skills.map((item) => (

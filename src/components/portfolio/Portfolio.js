@@ -1,4 +1,4 @@
-import { project } from "../portfolio/dataPortfolio";
+import { project } from "../../data/dataPortfolio";
 
 export const Portfolio = () => {
   const projects = project.map(({ alt, code, demo, id, img, name }) => (
